@@ -5,6 +5,7 @@ import "./styles.scss";
 import { IconButton } from 'blocksin-system';
 import { SquareIcon, CircleIcon} from 'sebikostudio-icons';
 import Settings from './Settings';
+import Video from './Video';
 
 function App(){
     // useRef is  used to create reference
@@ -70,6 +71,7 @@ function App(){
                 <IconButton onClick={addCircle} variant="ghost" size="medium">
                     <CircleIcon/>
                 </IconButton>
+                <Video canvas ={canvas} canvasRef={canvasRef}/>
             </div>
         <canvas id ="canvas" ref={canvasRef}/>
         <Settings canvas={canvas}/>
