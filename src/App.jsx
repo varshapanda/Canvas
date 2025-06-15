@@ -4,6 +4,7 @@ import { Canvas, Rect, Circle } from 'fabric';
 import "./styles.scss";
 import { IconButton } from 'blocksin-system';
 import { SquareIcon, CircleIcon} from 'sebikostudio-icons';
+import Settings from './Settings';
 
 function App(){
     // useRef is  used to create reference
@@ -39,7 +40,7 @@ function App(){
                 left:50,
                 width:100,
                 height:60,
-                fill:"#D84D42",
+                fill:"#000000",
 
             });
             canvas.add(rect);
@@ -52,7 +53,7 @@ function App(){
                 top:150,
                 left:150,
                 radius:50,
-                fill:"#2F4DC6",
+                fill:"#000000",
 
             });
             canvas.add(circle);
@@ -71,6 +72,7 @@ function App(){
                 </IconButton>
             </div>
         <canvas id ="canvas" ref={canvasRef}/>
+        <Settings canvas={canvas}/>
         </div>
     )
 }
