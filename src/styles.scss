@@ -60,22 +60,50 @@ body{
         padding: 0;
     }
 }
+.SettingsWrapper {
+  position: fixed;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.Settings,
+.CanvasSettings {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-neutral-container);
+  padding: 24px 8px;
+  border-radius: 4px;
+  text-align: left;
+  &:empty {
+    padding: 0;
+  }
+}
 
-.bottom{
-    position:relative;
-    display: flex;
-    height: 60px;
-    gap:12px;
-    justify-content: center;
-    .Toolbar{
-        flex-direction: row;
-        align-items: center;
-        transform: none;
-        width: min-content;
-        top: auto;
-        left: auto;
-        position: relative;
-    }
+.bottom {
+  bottom: 16px;
+  flex-direction: row;
+  left: 50%;
+  z-index: 3;
+  top: auto;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  height: 60px;
+  gap: 12px;
+  justify-content: center;
+  .Toolbar {
+    flex-direction: row;
+    align-items: center;
+    transform: none;
+    width: min-content;
+    top: auto;
+    left: auto;
+    position: relative;
+  }
 }
 .progress-bar{
     width:100%;
