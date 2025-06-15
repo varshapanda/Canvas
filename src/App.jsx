@@ -6,6 +6,8 @@ import { IconButton } from 'blocksin-system';
 import { SquareIcon, CircleIcon} from 'sebikostudio-icons';
 import Settings from './Settings';
 import Video from './Video';
+import CanvasSettings from './CanvasSettings';
+
 
 function App(){
     // useRef is  used to create reference
@@ -74,7 +76,10 @@ function App(){
                 <Video canvas ={canvas} canvasRef={canvasRef}/>
             </div>
         <canvas id ="canvas" ref={canvasRef}/>
-        <Settings canvas={canvas}/>
+        <div className='SettingsWrapper'>
+            <Settings canvas={canvas}/>
+            <CanvasSettings canvas={canvas}/>
+        </div>
         </div>
     )
 }
