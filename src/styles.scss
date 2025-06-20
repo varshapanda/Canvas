@@ -115,3 +115,27 @@
   left: 0;
   right: 0;
 }
+
+.layersList {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    li {
+      list-style-type: none;
+      padding: 4px;
+      text-align: left;
+      color: var(--foreground-neutral);
+      border-radius: 4px;
+      background-color: transparent;
+      user-select: none;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--background-neutral-hover);
+      }
+      &.selected-layer {
+        background-color: var(--background-neutral-active);
+      }
+    }
+  }
+}
