@@ -8,6 +8,7 @@ import CanvasSettings from "./CanvasSettings";
 import Cropping from "./Cropping";
 import CroppingSettings from "./CroppingSettings";
 import {handleObjectMoving, clearGuidelines} from './SnappingHelper'
+import LayersList from "./LayersList";
 
 
 function CanvasComponent() {
@@ -58,6 +59,7 @@ function CanvasComponent() {
         <Settings canvas={canvas} />
         <CanvasSettings canvas={canvas} />
         <CroppingSettings canvas={canvas} refreshKey={refreshKey} />
+        <LayersList canvas={canvas}/>
       </div>
     </div>
   );
