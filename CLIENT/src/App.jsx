@@ -10,6 +10,7 @@ import CroppingSettings from "./CroppingSettings";
 import {handleObjectMoving, clearGuidelines} from './SnappingHelper'
 import LayersList from "./LayersList";
 import FabricAssist from "./fabricAssist";
+import StyleEditor from "./StyleEditor";
 
 
 function CanvasComponent() {
@@ -62,6 +63,7 @@ function CanvasComponent() {
         <CanvasSettings canvas={canvas} />
         <CroppingSettings canvas={canvas} refreshKey={refreshKey} />
         <LayersList canvas={canvas}/>
+        <StyleEditor canvas={canvas} />
       </div>
     </div>
   );
